@@ -26,9 +26,7 @@ class ToggleInputter extends Component {
           className="form-control"
           type="text"
           onDoubleClick={this.handleDblClick}
-          onBlur={() => {
-            this.handleBlur();
-          }}
+          onBlur={this.handleBlur}
           style={style}
           ref={c => {
             this.input = c;
